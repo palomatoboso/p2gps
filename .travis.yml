@@ -9,6 +9,10 @@ script:
   - cd  $TRAVIS_BUILD_DIR/src/Clients
   - ./gradlew build
 
+
+#para que no de error el oraclejdk8
+dist: trusty
+
 #las variables de entorno para los credenciales de acceso a DockerHub las
 #creamos en travis-ci.org
 
